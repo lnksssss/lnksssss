@@ -130,7 +130,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
             <div class="LOGO" style="text-align: center;">
-      <a href="index.jsp"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+      <a href="index.do"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 		</div>
 		<br>
         <!--<h3 class="fw-bold mb-0 fs-2 col text-center" >환영합니다!</h3>-->
@@ -159,7 +159,7 @@
           <br>
           <small class="text-muted"><a href="">아이디 찾기</a> / <a href="">비밀번호 찾기</a></small>
           <br>
-						<small class="text-muted">아직 회원이 아니신가요?<a href="join.jsp">회원가입</a></small>
+						<small class="text-muted">아직 회원이 아니신가요?<a href="join.do">회원가입</a></small>
         </form>
       </div>
     </div>

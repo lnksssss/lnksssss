@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.css"/>
   </head>
   <body>
+  
+  <!-- ---------------------------------------헤더 영역--------------------------------------------- -->
     <header>
       <div class="wrap">
         <div class="main_nav">
           <div class="navBox">
             <h1>
-              <a href="index.jsp"><img src="resources/img/stepstyle.png" alt="메인로고" width="124px" height="54px"/></a>
+              <a href="index.do"><img src="resources/img/stepstyle.png" alt="메인로고" width="124px" height="54px"/></a>
             </h1>
             <nav>
               <ul class="nav">
@@ -32,11 +34,14 @@
               <input type="text" name="search" placeholder="직접 입력" />
               <i class="fa fa-search" aria-hidden="true"></i>
             </form>
-            <a href="login.jsp"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            <a href="login.do"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
           </div>
         </div>
       </div>
     </header>
+    
+      <!-- ---------------------------------------헤더 영역--------------------------------------------- -->
+    
     <div class="container">
       <div class="container_sel">
         <div class="swiper swiper1">
