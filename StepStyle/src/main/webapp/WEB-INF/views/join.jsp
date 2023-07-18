@@ -82,7 +82,7 @@
 <body>
 <div class="container">
 	<div class="logo-container">
-		<a href="index.jsp"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+		<a href="index.do"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 	</div>
 	
 	<form action="frm" id="frm">
