@@ -52,5 +52,15 @@ public class HomeController {
 	{
 		return "join";
 	}
+	
+	@RequestMapping(value="/community.do")
+	public String community()
+	{
+		return "community";
+	}
+	
+	
+	
+	
 }
 	

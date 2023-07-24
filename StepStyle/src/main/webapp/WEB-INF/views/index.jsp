@@ -25,7 +25,7 @@
                 <li><a href="">SHOES</a></li>
                 <li><a href="">STYLE</a></li>
                 <li><a href="">DROP</a></li>
-                <li><a href="">COMMUNITY</a></li>
+                <li><a href="community.do">COMMUNITY</a></li>
               </ul>
             </nav>
           </div>

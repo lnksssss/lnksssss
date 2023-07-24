@@ -18,7 +18,7 @@
         <div class="main_nav">
           <div class="navBox">
             <h1>
-              <a href="index.jsp"
+              <a href="index.do"
                 ><img
                   src="resources/img/stepstyle.png"
                   alt="메인로고"
@@ -31,7 +31,7 @@
                 <li><a href="">SHOES</a></li>
                 <li><a href="">STYLE</a></li>
                 <li><a href="">DROP</a></li>
-                <li><a href="">COMMUNITY</a></li>
+                <li><a href="community.do">COMMUNITY</a></li>
               </ul>
             </nav>
           </div>
@@ -40,7 +40,7 @@
               <input type="text" name="search" placeholder="직접 입력"/>
               <i class="fa fa-search" aria-hidden="true"></i>
             </form>
-            <a href="login.jsp"><i class="fa-solid fa-user" style="color: #000000"></i></a>
+            <a href="login.do"><i class="fa-solid fa-user" style="color: #000000"></i></a>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
     <div class="board">
       <div>
         <h2>자유게시판</h2>
-        <button>글 작성</button>
+        <button><a href="write.do">글 작성</a></button>
       </div>
       <table border="0" width="100%">
         <tr>

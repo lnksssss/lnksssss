@@ -94,14 +94,16 @@ header {
 }
 .board button {
   background-color: #000;
-  color: #fff;
   border: none;
   width: 80px;
   height: 40px;
   cursor: pointer;
   border-radius: 2px;
 }
-.board button:hover {
+.board button a{
+  	color: #fff;
+}
+.board button a:hover {
   font-weight: bold;
 }
 table {

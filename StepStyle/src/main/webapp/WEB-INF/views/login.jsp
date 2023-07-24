@@ -136,7 +136,7 @@
         <!--<h3 class="fw-bold mb-0 fs-2 col text-center" >환영합니다!</h3>-->
 <br>
       <div class="modal-body p-5 pt-0">
-        <form method="post" action="loginAction.jsp">
+        <form method="post" action="loginAction.do">
           <div class="form-floating mb-3">
             <input type="text" class="form-control rounded-3" id="userId" placeholder="name@example.com">
             <label for="floatingInput">아이디를 입력하세요</label>

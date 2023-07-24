@@ -85,7 +85,7 @@
 		<a href="index.do"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 	</div>
 	
-	<form action="frm" id="frm">
+	<form action="joinAction.do" id="frm">
 		<div class="form-floating mb-3">
 			<input type="text" class="form-control rounded-3" id="userId" placeholder="name@example.com">
 			<label for="floatingInput">아이디</label>

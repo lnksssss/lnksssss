@@ -23,5 +23,9 @@
 
 <p>	<a href="<%=request.getContextPath() %>/join.do"> 회원가입 이동 </a> </p>
 
+<p>	<a href="<%=request.getContextPath() %>/community.do"> 커뮤니티 게시판 이동 </a> </p>
+
+
+
 </body>
 </html>
