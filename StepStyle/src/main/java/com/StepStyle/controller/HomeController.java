@@ -40,17 +40,11 @@ public class HomeController {
 	{
 		return "index";
 	}
-	
-	@RequestMapping(value="/login.do")
-	public String login()
-	{
-		return "login";
-	}
-	
+			
 	@RequestMapping(value="/join.do")
 	public String join()
 	{
-		return "join";
+		return "/user/join";
 	}
 	
 	@RequestMapping(value="/community.do")

@@ -3,8 +3,32 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
-<mapper namespace="com.StepStyle.mapper.userMapper">
+<mapper namespace="com.StepStyle.mapper.UserMapper">
 	
+ <select id="selectUserByLogin" resultType="userVO" parameterType="userVO">
+		SELECT uId 
+		     , uName
+		     , uGrade
+		  FROM usertb
+		 WHERE uId = #{uId}
+		   AND uPw = #{uPw}
+	</select>
+	
+	
+<!-- 		dao에서 sqlSession객체의 
+		selectOne 메소드를 호출하면 되고
+		그의 결과 타입은 int 이다.
+	 -->
+	<select id="selectCntById" 
+	     parameterType="String" 
+	     resultType="Integer">
+		select count(uId)
+		  from usertb
+		 where uId = #{uId}
+	</select>
+
+		
+		
 	
 	
 </mapper>

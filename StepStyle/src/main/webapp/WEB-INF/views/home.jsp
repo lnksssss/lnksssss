@@ -19,7 +19,7 @@
 
 <p>	<a href="<%=request.getContextPath() %>/index.do"> 인덱스 이동</a> </p>
 
-<p>	<a href="<%=request.getContextPath() %>/login.do"> 로그인 이동 </a> </p>
+<p>	<a href="<%=request.getContextPath() %>/user/login.do"> 로그인 이동 </a> </p>
 
 <p>	<a href="<%=request.getContextPath() %>/join.do"> 회원가입 이동 </a> </p>
 

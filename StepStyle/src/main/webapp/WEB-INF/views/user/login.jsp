@@ -130,22 +130,32 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
             <div class="LOGO" style="text-align: center;">
-      <a href="index.do"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+      <a href="../index.do"><img src="../resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 		</div>
 		<br>
         <!--<h3 class="fw-bold mb-0 fs-2 col text-center" >환영합니다!</h3>-->
+        
+        
+        
+        
 <br>
       <div class="modal-body p-5 pt-0">
-        <form method="post" action="loginAction.do">
+       <form action="login.do" method="post">
           <div class="form-floating mb-3">
-            <input type="text" class="form-control rounded-3" id="userId" placeholder="name@example.com">
+            <input type="text" class="form-control rounded-3" name="uId" >    
             <label for="floatingInput">아이디를 입력하세요</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control rounded-3" id="userPw" placeholder="Password">
+            <input type="password" class="form-control rounded-3" name="uPw" >
             <label for="floatingPassword">비밀번호를 입력하세요</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">로그인</button>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary">로그인</button>
+          
+          
+          
+          
+          
+          
 				<!--  <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small> -->
           <hr class="my-4">
 				<!--        <h2 class="fs-5 fw-bold mb-3 col text-center ">SNS �α���</h2>-->
@@ -159,7 +169,7 @@
           <br>
           <small class="text-muted"><a href="">아이디 찾기</a> / <a href="">비밀번호 찾기</a></small>
           <br>
-						<small class="text-muted">아직 회원이 아니신가요?<a href="join.do">회원가입</a></small>
+						<small class="text-muted">아직 회원이 아니신가요?<a href="../join.do">회원가입</a></small>
         </form>
       </div>
     </div>
