@@ -25,7 +25,7 @@
                 <li><a href="">SHOES</a></li>
                 <li><a href="">STYLE</a></li>
                 <li><a href="">DROP</a></li>
-                <li><a href="community.do">COMMUNITY</a></li>
+                <li><a href="board/community.do">COMMUNITY</a></li>
               </ul>
             </nav>
           </div>
@@ -34,7 +34,7 @@
               <input type="text" name="search" placeholder="직접 입력" />
               <i class="fa fa-search" aria-hidden="true"></i>
             </form>
-            <a href="login.do"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+            <a href="user/login.do"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
           </div>
         </div>
       </div>

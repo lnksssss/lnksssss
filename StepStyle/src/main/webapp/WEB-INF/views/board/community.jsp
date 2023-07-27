@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="resources/css/community.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/community.css" />
   </head>
   <body>
     <header>
@@ -18,9 +18,9 @@
         <div class="main_nav">
           <div class="navBox">
             <h1>
-              <a href="index.do"
+              <a href="${pageContext.request.contextPath}/index.do"
                 ><img
-                  src="resources/img/stepstyle.png"
+                  src="${pageContext.request.contextPath}/resources/img/stepstyle.png"
                   alt="메인로고"
                   width="124px"
                   height="54px"
@@ -40,7 +40,7 @@
               <input type="text" name="search" placeholder="직접 입력"/>
               <i class="fa fa-search" aria-hidden="true"></i>
             </form>
-            <a href="login.do"><i class="fa-solid fa-user" style="color: #000000"></i></a>
+            <a href="${pageContext.request.contextPath}/user/login.do"><i class="fa-solid fa-user" style="color: #000000"></i></a>
           </div>
         </div>
       </div>

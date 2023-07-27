@@ -35,6 +35,7 @@ public class HomeController {
 		
 		return "home";
 	}
+	
 	@RequestMapping(value="/index.do")
 	public String index()
 	{
@@ -47,11 +48,6 @@ public class HomeController {
 		return "/user/join";
 	}
 	
-	@RequestMapping(value="/community.do")
-	public String community()
-	{
-		return "community";
-	}
 	
 	
 	

@@ -85,7 +85,7 @@
 		<a href="index.do"><img src="resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 	</div>
 	
-	<form action="joinAction.do" id="frm">
+	<form action="join.do" id="frm">
 		<div class="form-floating mb-3">
 			<input type="text" class="form-control rounded-3" id="userId" placeholder="name@example.com">
 			<label for="floatingInput">아이디</label>
@@ -141,6 +141,7 @@
 			<input type="text" class="form-control rounded-3" id="userId" placeholder="name@example.com">
 			<label for="floatingInput">상세주소</label>
 		</div>-->
+		
 		
 		<div class="btn-container">
 			<button type="submit" class="btn btn-primary">가입하기</button>

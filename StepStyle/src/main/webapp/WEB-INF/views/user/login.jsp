@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/modals/">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -130,7 +130,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
             <div class="LOGO" style="text-align: center;">
-      <a href="../index.do"><img src="../resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+      <a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 		</div>
 		<br>
         <!--<h3 class="fw-bold mb-0 fs-2 col text-center" >환영합니다!</h3>-->
@@ -158,7 +158,8 @@
           
 				<!--  <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small> -->
           <hr class="my-4">
-				<!--        <h2 class="fs-5 fw-bold mb-3 col text-center ">SNS �α���</h2>-->
+				
+				
           <button class="w-49 py-3 p-4 btn btn-outline-warning rounded-3" type="submit">
             <svg class="bi me-1 " width="16" height="16"><use xlink:href="#twitter"/></svg>
           카카오톡 로그인</button>
@@ -177,6 +178,5 @@
 </div>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
