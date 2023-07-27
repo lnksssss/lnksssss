@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -58,123 +59,15 @@
           <td>작성일</td>
           <td>조회수</td>
         </tr>
-        <tr>
-          <td>1</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>11</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>12</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>13</td>
-          <td>
-            <a href="">안녕하세요 반갑습니다 어서오세요</a>
-          </td>
-          <td>김길똥</td>
-          <td>2023-07-18</td>
-          <td>10</td>
-        </tr>
+      <c:forEach items="${list}" var="board">
+		<tr>
+			<td>${board.bidx }</td>
+			<td><a href="view.do?bidx=${board.bidx}">${board.title }</a></td>
+			<td>${board.id } </td>
+			<td>${board.wdate }</td>
+			<td>${board.hit }</td>
+		</tr>
+	</c:forEach>
       </table>
       <p>&lt; 1 2 3 4 5 6 7 8 9 &gt;</p>
     </div>

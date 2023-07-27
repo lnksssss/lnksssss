@@ -56,6 +56,11 @@ public class UserController {
 		pw.flush();
 	}
 	
+	@RequestMapping(value="/join.do")
+	public String join()
+	{
+		return "user/join";
+	}
 	
 }
 

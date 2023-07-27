@@ -42,11 +42,7 @@ public class HomeController {
 		return "index";
 	}
 			
-	@RequestMapping(value="/join.do")
-	public String join()
-	{
-		return "/user/join";
-	}
+
 	
 	
 	

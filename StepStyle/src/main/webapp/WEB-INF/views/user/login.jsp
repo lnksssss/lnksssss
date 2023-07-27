@@ -170,7 +170,7 @@
           <br>
           <small class="text-muted"><a href="">아이디 찾기</a> / <a href="">비밀번호 찾기</a></small>
           <br>
-						<small class="text-muted">아직 회원이 아니신가요?<a href="../join.do">회원가입</a></small>
+						<small class="text-muted">아직 회원이 아니신가요?<a href="${pageContext.request.contextPath}/user/join.do">회원가입</a></small>
         </form>
       </div>
     </div>
