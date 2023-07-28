@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -19,7 +20,7 @@
         <div class="main_nav">
           <div class="navBox">
             <h1>
-              <a href="${pageContext.request.contextPath}/index.do"
+              <a href="${pageContext.request.contextPath}/"
                 ><img
                   src="${pageContext.request.contextPath}/resources/img/stepstyle.png"
                   alt="메인로고"
@@ -29,7 +30,7 @@
             </h1>
             <nav>
               <ul class="nav">
-                <li><a href="">SHOES</a></li>
+                <li><a href="${pageContext.request.contextPath}/board/shoesPage.do">SHOES</a></li>
                 <li><a href="">STYLE</a></li>
                 <li><a href="">DROP</a></li>
                 <li><a href="community.do">COMMUNITY</a></li>
@@ -49,7 +50,7 @@
     <div class="board">
       <div>
         <h2>자유게시판</h2>
-        <button><a href="write.do">글 작성</a></button>
+        <button><a href="${pageContext.request.contextPath}/board/write.do">글 작성</a></button>
       </div>
       <table border="0" width="100%">
         <tr>
@@ -59,7 +60,7 @@
           <td>작성일</td>
           <td>조회수</td>
         </tr>
-      <c:forEach items="${list}" var="board">
+      <c:forEach items="${community}" var="board">
 		<tr>
 			<td>${board.bidx }</td>
 			<td><a href="view.do?bidx=${board.bidx}">${board.title }</a></td>

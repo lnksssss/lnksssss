@@ -18,11 +18,11 @@
         <div class="main_nav">
           <div class="navBox">
             <h1>
-              <a href="index.do"><img src="resources/img/stepstyle.png" alt="메인로고" width="124px" height="54px"/></a>
+              <a href="${pageContext.request.contextPath}/"><img src="resources/img/stepstyle.png" alt="메인로고" width="124px" height="54px"/></a>
             </h1>
             <nav>
               <ul class="nav">
-                <li><a href="">SHOES</a></li>
+                <li><a href="board/shoesPage.do">SHOES</a></li>
                 <li><a href="">STYLE</a></li>
                 <li><a href="">DROP</a></li>
                 <li><a href="board/community.do">COMMUNITY</a></li>

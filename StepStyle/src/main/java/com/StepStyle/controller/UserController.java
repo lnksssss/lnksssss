@@ -62,6 +62,8 @@ public class UserController {
 		return "user/join";
 	}
 	
+	
+	
 }
 
 

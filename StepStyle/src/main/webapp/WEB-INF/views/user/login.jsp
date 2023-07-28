@@ -130,7 +130,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
             <div class="LOGO" style="text-align: center;">
-      <a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+      <a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 		</div>
 		<br>
         <!--<h3 class="fw-bold mb-0 fs-2 col text-center" >환영합니다!</h3>-->

@@ -6,7 +6,7 @@
 	 <typeAliases>
        
         <typeAlias type="com.StepStyle.vo.UserVO" alias="userVO"/>
-        
+         <typeAlias type="com.StepStyle.vo.BoardVO" alias="boardVO"/>
     </typeAliases>
 
 </configuration>

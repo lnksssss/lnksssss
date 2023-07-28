@@ -82,7 +82,8 @@
 <body>
 <div class="container">
 	<div class="logo-container">
-		<a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
+		<a href="${pageContext.request.contextPath}/">
+		<img src="${pageContext.request.contextPath}/resources/img/stepstyle.png" alt="LOGO" width="40%"></a>
 	</div>
 	
 	<form action="join.do" id="frm">
