@@ -64,7 +64,7 @@
 		<tr>
 			<td>${board.bidx }</td>
 			<td><a href="view.do?bidx=${board.bidx}">${board.title }</a></td>
-			<td>${board.id } </td>
+			<td>${board.uId } </td>
 			<td>${board.wdate }</td>
 			<td>${board.hit }</td>
 		</tr>

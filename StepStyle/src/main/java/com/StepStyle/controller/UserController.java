@@ -45,7 +45,7 @@ public class UserController {
 			System.out.println("회원존재");
 			
 			session.setAttribute("login", loginVO);
-			pw.append("<script>alert('로그인에 성공했습니다.');location.href='"+req.getContextPath()+"/index.do';</script>");
+			pw.append("<script>alert('로그인에 성공했습니다.');location.href='"+req.getContextPath()+"/';</script>");
 			
 		}else {
 			//login할 회원이 데이터베이스에 존재 X

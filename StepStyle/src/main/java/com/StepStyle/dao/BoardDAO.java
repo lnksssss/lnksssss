@@ -33,7 +33,7 @@ public class BoardDAO {
         sqlSession.update(namespace + ".updateBoard", board);
     }
 
-    public void deleteBoard(int bidx) {
-        sqlSession.delete(namespace + ".deleteBoard", bidx);
+    public int deleteBoard(int bidx) {
+        return sqlSession.delete(namespace + ".deleteBoard", bidx);
     }
 }

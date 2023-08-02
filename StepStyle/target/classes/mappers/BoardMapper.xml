@@ -15,9 +15,15 @@
     </select>
 <!-- 게시글 추가 -->
 <insert id="insertBoard" parameterType="com.StepStyle.vo.BoardVO">
-    INSERT INTO boardTB2 (title, wdate, body, hit, id)
-    VALUES (#{title}, #{wdate}, #{body}, #{hit}, #{id})
+    INSERT INTO boardTB2 (title, wdate, body, hit, uId)
+    VALUES (#{title}, #{wdate}, #{body}, #{hit}, #{uId})
 </insert>
+
+ <!-- 게시글 삭제 쿼리 -->
+    <delete id="deleteBoard">
+        DELETE FROM boardTB2
+        WHERE bidx = #{bidx}
+    </delete>
 
 
 

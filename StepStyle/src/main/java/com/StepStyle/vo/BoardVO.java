@@ -7,7 +7,7 @@ public class BoardVO {
     private Date wdate;
     private String body;
     private int hit;
-    private String id;
+    private String uId;
 
     public int getBidx() {
         return bidx;
@@ -25,13 +25,7 @@ public class BoardVO {
         this.title = title;
     }
 
-    public Date getWdate() {
-        return wdate;
-    }
-
-    public void setWdate(Date wdate) {
-        this.wdate = wdate;
-    }
+   
 
     public String getBody() {
         return body;
@@ -48,18 +42,34 @@ public class BoardVO {
     public void setHit(int hit) {
         this.hit = hit;
     }
+   
 
-    public String getId() {
-        return id;
-    }
+	public String getuId() {
+		return uId;
+	}
 
-    public void setId(String id) {
-        this.id = id;
-    }
+	public void setuId(String uId) {
+		this.uId = uId;
+	}
 
-    @Override
-    public String toString() {
-        return "BoardVO [bidx=" + bidx + ", title=" + title + ", wdate=" + wdate + ", body=" + body + ", hit=" + hit + ", id=" + id + "]";
-    }
+	public Date getWdate() {
+		return wdate;
+	}
+
+	public void setWdate(Date wdate) {
+		this.wdate = wdate;
+	}
+
+	@Override
+	public String toString() {
+		return "BoardVO [bidx=" + bidx + ", title=" + title + ", wdate=" + wdate + ", body=" + body + ", hit=" + hit
+				+ ", uId=" + uId + "]";
+	}
+
+	
+	
+	
+
+   
 }
 

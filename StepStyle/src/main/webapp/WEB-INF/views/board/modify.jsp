@@ -78,7 +78,7 @@
     </header>
 		<div class="board">
 			<h2>게시글 작성</h2>
-			<form action="${pageContext.request.contextPath}/board/write.do" method="post">
+			<form action="${pageContext.request.contextPath}/board/modify.do" method="post">
 				<table border="0" width="1200px">
 					<!--<tr>
 						<td>&nbsp;게시물 분류</td>
@@ -92,7 +92,7 @@
 					</tr>-->
 					<tr>
 						<td style="text-align: center; width: 500px;">제목</td>
-						<td>&nbsp;<input type="text" id="title" name="title"></td>
+						<td><input type="text" name="title" size="30" value="${vo.title}"></td>
 					</tr>
 					<tr>
 						<td style="text-align: center; width: 500px;">작성자</td>
@@ -109,11 +109,11 @@
 					</tr>-->
 					<tr>
 						<td colspan="2">
-							<textarea name="body" id="summernote"  cols="135" rows="30" required></textarea>
+							<textarea name="body" id="summernote"  cols="135" rows="30" required>${vo.body}</textarea>
 						</td>
 					</tr>
 				</table>
-				<button class="butn">글작성</button>
+				<button class="butn">저장</button>
 			</form>
 		</div>
 		

@@ -28,15 +28,15 @@
             </h1>
             <nav>
               <ul class="nav">
-                <li><a href="">SHOES</a></li>
-                <li><a href="">STYLE</a></li>
-                <li><a href="">DROP</a></li>
-                <li><a href="community.do">COMMUNITY</a></li>
-              </ul>
+					<li><a href="${pageContext.request.contextPath}/board/shoesPage.do">SHOES</a></li>
+					<li><a href="">STYLE</a></li>
+					<li><a href="">DROP</a></li>
+					<li><a href="${pageContext.request.contextPath}/board/community.do">COMMUNITY</a></li>
+				</ul>
             </nav>
           </div>
           <div class="submitBox">
-            <a href="${pageContext.request.contextPath}/"
+            <a href="${pageContext.request.contextPath}/user/login.do"
               ><i class="fa-solid fa-user" style="color: #000000"></i
             ></a>
           </div>
@@ -45,7 +45,6 @@
     </header>
 		<div class="board">
 			<h2>게시글 </h2>
-			<form action="">
 				<table border="0" width="1200px">
 					<tr>
 						<td style="text-align: center; width: 20px;">제목</td>
@@ -53,7 +52,7 @@
 					</tr>
 					<tr>
 						<td style="text-align: center; width: 20px;">작성자</td>
-						<td>&nbsp;&nbsp;${board.id}</td>
+						<td>&nbsp;&nbsp;${board.uId}</td>
 					</tr>
 					<tr>
 						<td style="text-align: center; width: 20px;">작성일</td>
@@ -71,10 +70,38 @@
 						</td>
 					</tr>
 				</table>
-				<button class="butn">수정하기</button>
-				<button class="butn">삭제하기</button>
-			</form>
+								
+		       
+			
+			<button class="butn">수정하기</button>
+			<button class="butn" id="deleteButton">삭제하기</button>
+			
 		</div>
+       			
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+		  $(document).ready(function() {
+	        $("#deleteButton").on("click", function() {
+	            var bidx = ${board.bidx}; // 해당 게시물의 bidx 값을 가져와서 변수에 저장
+	            $.ajax({
+	                type: "POST",
+	                url: "${pageContext.request.contextPath}/board/delete.do",
+	                data: { bidx: bidx },
+	                success: function(data) {
+	                    // 삭제 결과에 따라 메시지를 alert으로 보여줌
+	                    alert("삭제되었습니다.");
+	                    // 커뮤니티 페이지로 리로드
+	                    location.href = "${pageContext.request.contextPath}/board/community.do";
+	                },
+	                error: function(xhr, status, error) {
+	                    // 에러 발생 시 메시지를 alert으로 보여줌
+	                    alert("오류가 발생했습니다.");
+	                }
+	            });
+	        });
+	    });
+	</script>
+		 
+
 </body>
 </html>

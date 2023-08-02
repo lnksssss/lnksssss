@@ -10,6 +10,7 @@ public interface BoardService {
     BoardVO getBoardById(int bidx);
     void insertBoard(BoardVO board);
     void updateBoard(BoardVO board);
-    void deleteBoard(int bidx);
+    int deleteBoard(int bidx);
+    void writeBoard(BoardVO board);
 }
 
