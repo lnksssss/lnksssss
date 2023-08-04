@@ -124,6 +124,7 @@ header {
 }
 .shoes{
   margin-top: 100px;
+  overflow: auto;
 }
 .shoes > p {
   font-size: 20px;
