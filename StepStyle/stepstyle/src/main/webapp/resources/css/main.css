@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+body {
+  line-height: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrap {
+  width: 100%;
+  height: 62px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+}
+.main_nav {
+  display: flex;
+  width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBox {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.submitBox {
+  display: flex;
+  position: relative;
+}
+.nav a {
+  font-weight: bold;
+  color: #7e7e7e;
+  font-size: 15px;
+}
+.nav a:hover {
+  color: black;
+}
+.nav li {
+  margin-right: 15px;
+}
+form {
+  padding: 20px 5px;
+  margin-right: 70px;
+}
+form {
+  position: relative;
+}
+.submitBox > form input {
+  width: 100%;
+  border: 1px solid #7e7e7e;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+.submitBox > form i {
+  position: absolute;
+  margin: 0;
+  top: 30px;
+  right: -10px;
+}
+.submitBox > a > i {
+  position: absolute;
+  right: 18px;
+  top: 30px;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+/*-----------------------------------header css------------------------------------------*/
+
+.container {
+  margin: 1px 0 0 0;
+  padding-top: 62px;
+}
+.container_sel {
+  width: 1320px;
+  margin: 0 auto;
+}
+.banner img {
+  width: 1320px;
+  height: 480px;
+}
+.swiper {
+  z-index: -1;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: rgba(255, 255, 255, 0.3);
+  display: none;
+}
+.swiper .swiper-pagination-bullet {
+  background-color: #eee;
+}
+
+/*-----------------------------------main_slid css------------------------------------------*/
+
+.hotShoes_slid {
+  padding-top: 30px;
+}
+h2 {
+  font-size: 22px;
+  word-spacing: -2px;
+}
+.hotShoes img {
+  border-radius: 8px;
+}
+.hotShoes p {
+  font-size: 14px;
+  word-spacing: -1px;
+}
+.hotShoes p:nth-child(1) {
+  font-weight: bold;
+}
+.hotShoes p:nth-child(2) {
+  margin-top: -8px;
+}
+.hotShoes p:nth-child(3) {
+  font-size: 12px;
+  color: rgba(34, 34, 34, 0.5);
+}
+.hotShoes_box {
+  display: flex;
+  width: 1320px;
+  width: 1320px !important;
+}
+.swiper-button-next{
+  width: 34px!important;
+}
+.swiper-button-prev{
+  width: 34px!important;
+}
+.swiper-button-next > div {
+  width: 34px;
+  height: 34px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev > div {
+  width: 34px;
+  height: 34px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next img{
+  z-index: 20;
+}
+/*-----------------------------------hot_slid css------------------------------------------*/
+
+.newShoes_slid {
+  padding-top: 30px;
+}
+h2 {
+  font-size: 22px;
+  word-spacing: -2px;
+}
+.newShoes img {
+  border-radius: 8px;
+}
+.newShoes p {
+  font-size: 14px;
+  word-spacing: -1px;
+}
+.newShoes p:nth-child(1) {
+  font-weight: bold;
+}
+.newShoes p:nth-child(2) {
+  margin-top: -8px;
+}
+.newShoes p:nth-child(3) {
+  font-size: 12px;
+  color: rgba(34, 34, 34, 0.5);
+}
+.newShoes_box {
+  display: flex;
+  width: 1320px;
+}
+
+/*-----------------------------------new css------------------------------------------*/
+
+.style_slid {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+h2 {
+  font-size: 22px;
+  word-spacing: -2px;
+}
+.style img {
+  border-radius: 8px;
+}
+.style p {
+  font-size: 14px;
+  word-spacing: -1px;
+}
+.style p:nth-child(1) {
+  font-weight: bold;
+}
+.style p:nth-child(2) {
+  margin-top: -8px;
+}
+.style_box {
+  display: flex;
+  width: 1320px;
+  justify-content: space-between;
+}
+
+/*-----------------------------------style css------------------------------------------*/
+
+.full_box {
+  background-color: #101113;
+  padding: 50px 0 50px;
+}
+.Information_box p {
+  color: #a5a5a7;
+  font-size: 12px;
+  margin-left: 300px;
+}
+.Information_box p:nth-child(2) {
+  margin-top: -5px;
+}
+.Information_box p:nth-child(3) {
+  padding-top: 10px;
+}
+.Information_box p:nth-child(4) {
+  padding-top: 70px;
+}
+
+/*-----------------------------------footer css------------------------------------------*/
